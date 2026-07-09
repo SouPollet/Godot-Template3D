@@ -17,13 +17,13 @@ Cette application sert de bac à sable éducatif pour apprendre :
 ## 📋 Fonctionnalités
 
 ### Déplacements et Contrôles
-- **Clavier** : touches WASD pour se déplacer.
-- **Souris** : Regarder autour de soi en vue à la première personne (FPS).
+- **Clavier** : touches ZQSD / Flèches / Joystick pour se déplacer.
+- **Souris** : Regarder autour de soi en vue à la première personne (FPC).
 - **Barre Espace** : Saut (basé sur la physique).
 - **ESC** : Quitter l'application.
 
 ### Systèmes Interactifs
-- **Détection de Survol (Hover)** : Système basé sur le Raycasting pour détecter les états survolés des boutons et objets.
+- **Détection de Survol (Hover)** : Système basé sur le Raycasting pour détecter les objets survolés des boutons et objets.
 - **Saisie et Déplacement (Drag & Drop)** : Manipulation d'objets physiques dans l'espace 3D.
 - **Retour Visuel** : Changement dynamique de matériaux lors du survol/clic.
 
@@ -32,7 +32,7 @@ Cette application sert de bac à sable éducatif pour apprendre :
 ```
 project/
 ├── main.tscn               # Scène principale avec l'environnement 3D complet
-├── basketball.tscn         # Objet balle de basket (spawneable)
+├── basketball.tscn         # Objet balle de basket (instanciable)
 ├── Controls.gd             # Contrôleur de personnage FPS
 ├── input_manager.gd        # Gestionnaire de raycasting et d'interaction
 ├── interactable_button.gd  # Script de bouton avec effets au survol
@@ -51,7 +51,7 @@ Implémente les mouvements à la première personne :
 - Simulation de la gravité.
 - Mécanique de saut.
 - Rotation de caméra basée sur la souris.
-- Gestion des entrées clavier (WASD).
+- Gestion des entrées clavier (ZQSD).
 
 #### `input_manager.gd` (Node3D)
 Gère le système d'interaction central :
@@ -74,8 +74,8 @@ Interaction objet basée sur la physique :
 ## 🚀 Pour Commencer
 
 ### Prérequis
-- **Moteur Godot** : Version 4.7+ recommandée.
-- **Système d'exploitation** : Windows (configuré pour le rendu D3D12).
+- **Moteur Godot** : Version 4.7+ recommandée. Version Standard GDScript et non .NET
+- **Système d'exploitation** : Windows/Mac/Linux (configuré pour le rendu D3D12).
 - **Configuration système** : Compatible avec le mode GL Compatibility.
 
 ### Instructions de Configuration
@@ -85,13 +85,7 @@ Interaction objet basée sur la physique :
     - Téléchargez la version 4.7 ou supérieure.
 
 2. **Ouvrez le Projet**
-    ```bash
-    # Si vous utilisez la ligne de commande Godot
-    godot --path .
-
-    # Ou ouvrez via l'éditeur
-    # Fichier > Ouvrir Projet > Naviguez vers ce dossier
-    ```
+  Fichier > Ouvrir Projet > Naviguez vers ce dossier
 
 3. **Lancez le Projet**
     - Appuyez sur F5 ou cliquez sur "Exécuter le projet" dans l'éditeur.
@@ -101,11 +95,11 @@ Interaction objet basée sur la physique :
 
 | Action | Entrée |
 |--------|--------|
-| Avancer/Reculer | W / S |
-| Gauche/Droite | A / D |
+| Avancer/Reculer | Z / S |
+| Gauche/Droite | Q / D |
 | Saut | Barre Espace |
 | Regarder (Caméra) | Mouvement de la souris |
-| Interagir/Apparaître Balle | Clic Gauche |
+| Interagir | Clic Gauche |
 | Quitter l'application | Échap (ESC) |
 
 ## 📚 Objectifs Pédagogiques
@@ -127,12 +121,11 @@ Ce projet est conçu comme :
 
 ## 🔍 Concepts Clés Couverts
 
-- **CharacterBody3D** : Déplacement de personnage sans physique (non-physics).
+- **CharacterBody3D** : Déplacement de personnage sans physique.
 - **RigidBody3D** : Interaction basée sur la physique.
 - **StaticBody3D** : Détection de collision sans physique.
 - **RayCast3D** : Connaissance spatiale et ciblage.
 - **Événements d'Entrée** : Gestion du clavier et de la souris.
-- **PhysicsServer3D** : Gestion bas niveau de la physique.
 - **Échange de Matériaux** : Retour visuel dynamique.
 
 ## 🛠️ Notes Techniques
@@ -180,6 +173,8 @@ Vous êtes libre de l'utiliser, de le modifier et de le distribuer à des fins �
 - **L'équipe Godot Engine** - Pour avoir créé ce moteur de jeu incroyable.
 - **Les ressources de la communauté** - Pour les tutoriels et la documentation.
 - **Apprendre par la pratique** - Ce projet met l'accent sur l'apprentissage pratique !
+- **LegionGames2004** - https://www.youtube.com/watch?v=A3HLeyaBCq4
+- **Brackeys le goat** - https://www.youtube.com/watch?v=ke5KpqcoiIU
 
 ---
 
