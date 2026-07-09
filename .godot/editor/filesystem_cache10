@@ -1,0 +1,15 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1783606470
+basketball.tscn::PackedScene::4704300636941433570::1783605090::0::1::::<><><>0<>0<><>::uid://cwl85yhtgaif::::res://basketballBall.glb<>uid://cwc31mlw64qks::::res://interactable_object.gd<>uid://472iicygfoba::::res://Grow.tres
+basketballBall.glb::PackedScene::186522429104157269::1783586244::1783606471::1::::<><><>0<>0<>1040534a27d7ae265171e1179eed07cf<>res://.godot/imported/basketballBall.glb-dfcbd831dd9c7908a3e719326b83ad1e.scn::
+Bouton_Base.tres::StandardMaterial3D::2653277519004868971::1783598626::0::1::::<><><>0<>0<><>::
+Bouton_Hover.tres::StandardMaterial3D::3378807875368890647::1783598703::0::1::::<><><>0<>0<><>::
+Color.tres::StandardMaterial3D::8266348989544988624::1783581814::0::1::::<><><>0<>0<><>::
+Controls.gd::GDScript::3976496757811432140::1783598971::0::1::::<>CharacterBody3D<><>0<>0<><>::
+Grow.tres::StandardMaterial3D::2103190623163876578::1783599839::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::9205914367471933684::1783580708::1783606471::1::::<><><>0<>0<>247a5ac7aea4a535854cb56936d83ca5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+input_manager.gd::GDScript::265535056249687640::1783589155::0::1::::<>Node3D<><>0<>0<><>::
+interactable_button.gd::GDScript::4763709708799338326::1783598535::0::1::::<>StaticBody3D<><>0<>0<><>::
+interactable_object.gd::GDScript::6322871837685237118::1783605516::0::1::::<>RigidBody3D<><>0<>0<><>::
+main.tscn::PackedScene::1677674505023346920::1783605516::0::1::::<><><>0<>0<><>::uid://dp1jtbrkxlf41::::res://Color.tres<>uid://472iicygfoba::::res://Grow.tres<>uid://bwwik5v7l22eq::::res://Controls.gd<>uid://d1vlacbkoy7i::::res://input_manager.gd<>uid://cwc31mlw64qks::::res://interactable_object.gd<>uid://b84tuq8b821qg::::res://interactable_button.gd<>uid://bd2jdfu1uof8f::::res://Bouton_Base.tres<>uid://boeyqbx0gl6d4::::res://Bouton_Hover.tres
+mesh_instance_3d.gd::GDScript::3894146468617851686::1783587711::0::1::::<>MeshInstance3D<><>0<>0<><>::
