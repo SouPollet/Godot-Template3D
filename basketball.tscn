@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b8a2e5w8uquqs"]
 
 [ext_resource type="PackedScene" uid="uid://cwl85yhtgaif" path="res://basketballBall.glb" id="1_512qa"]
-[ext_resource type="Script" uid="uid://cwc31mlw64qks" path="res://interactable_object.gd" id="1_hvw6b"]
-[ext_resource type="Material" uid="uid://472iicygfoba" path="res://Grow.tres" id="3_8nfq6"]
+[ext_resource type="Script" uid="uid://cwc31mlw64qks" path="res://Interactions/interactable_object.gd" id="1_hvw6b"]
+[ext_resource type="Material" uid="uid://472iicygfoba" path="res://Interactions/Grow.tres" id="3_8nfq6"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6av75"]
 

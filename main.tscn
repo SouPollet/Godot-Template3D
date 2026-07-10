@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://x5xb3n4870xg"]
 
-[ext_resource type="Material" uid="uid://dp1jtbrkxlf41" path="res://Color.tres" id="1_h2yge"]
-[ext_resource type="Material" uid="uid://472iicygfoba" path="res://Grow.tres" id="2_1bvp3"]
-[ext_resource type="Material" uid="uid://fv212aw5bvfc" path="res://UI_Raycast_Feedback.tres" id="3_kek77"]
-[ext_resource type="Script" uid="uid://bwwik5v7l22eq" path="res://Controls.gd" id="3_lquwl"]
-[ext_resource type="Script" uid="uid://d1vlacbkoy7i" path="res://input_manager.gd" id="4_1bvp3"]
-[ext_resource type="Script" uid="uid://cwc31mlw64qks" path="res://interactable_object.gd" id="4_5vw27"]
-[ext_resource type="Script" uid="uid://b84tuq8b821qg" path="res://interactable_button.gd" id="5_lquwl"]
-[ext_resource type="Material" uid="uid://bd2jdfu1uof8f" path="res://Bouton_Base.tres" id="6_7mycd"]
-[ext_resource type="Material" uid="uid://boeyqbx0gl6d4" path="res://Bouton_Hover.tres" id="7_272bh"]
+[ext_resource type="Material" uid="uid://dp1jtbrkxlf41" path="res://Interactions/Color.tres" id="1_h2yge"]
+[ext_resource type="Material" uid="uid://472iicygfoba" path="res://Interactions/Grow.tres" id="2_1bvp3"]
+[ext_resource type="Material" uid="uid://fv212aw5bvfc" path="res://Interactions/UI_Raycast_Feedback.tres" id="3_kek77"]
+[ext_resource type="Script" uid="uid://bwwik5v7l22eq" path="res://Interactions/Controls.gd" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://d1vlacbkoy7i" path="res://Interactions/input_manager.gd" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://cwc31mlw64qks" path="res://Interactions/interactable_object.gd" id="4_5vw27"]
+[ext_resource type="Script" uid="uid://b84tuq8b821qg" path="res://Interactions/interactable_button.gd" id="5_lquwl"]
+[ext_resource type="Material" uid="uid://bd2jdfu1uof8f" path="res://Interactions/Bouton_Base.tres" id="6_7mycd"]
+[ext_resource type="Material" uid="uid://boeyqbx0gl6d4" path="res://Interactions/Bouton_Hover.tres" id="7_272bh"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_1d143"]
 size = Vector2(10, 20)
@@ -41,6 +41,7 @@ outer_radius = 2.236
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gkll2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_h2yge"]
+sky_top_color = Color(0.6736016, 0.34295532, 0.20055816, 1)
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 

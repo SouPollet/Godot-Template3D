@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://baa5cq1ro3jfx"]
+
+[ext_resource type="Script" uid="uid://bwwik5v7l22eq" path="res://Interactions/Controls.gd" id="1_0k3mv"]
+[ext_resource type="Material" uid="uid://fv212aw5bvfc" path="res://Interactions/UI_Raycast_Feedback.tres" id="2_igwek"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_6av75"]
+material = ExtResource("2_igwek")
+radius = 0.005
+height = 0.01
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_6av75"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6av75"]
+
+[node name="Character" type="Node3D" unique_id=75469284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0050507, 4.2109375)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1895229831]
+script = ExtResource("1_0k3mv")
+
+[node name="Head" type="Node3D" parent="CharacterBody3D" unique_id=1217975427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49176025, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" unique_id=1555645003]
+
+[node name="InteractRay" type="RayCast3D" parent="CharacterBody3D/Head/Camera3D" unique_id=447250703]
+target_position = Vector3(0, 0, -5)
+collision_mask = 129
+
+[node name="FeedbackRaycast" type="MeshInstance3D" parent="CharacterBody3D/Head/Camera3D" unique_id=1992701658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5792506)
+mesh = SubResource("SphereMesh_6av75")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=948024098]
+mesh = SubResource("CapsuleMesh_6av75")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=218636205]
+shape = SubResource("CapsuleShape3D_6av75")
