@@ -1,6 +1,6 @@
-extends Node3D
+extends Node
 
-@onready var raycast: RayCast3D = $"../../Character/CharacterBody3D/Head/Camera3D/InteractRay"
+@onready var raycast: RayCast3D = $"./CharacterBody3D/Head/Camera3D/InteractRay"
 var current_hovered_body: StaticBody3D = null
 
 func _process(_float):

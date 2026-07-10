@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://baa5cq1ro3jfx"]
 
 [ext_resource type="Script" uid="uid://bwwik5v7l22eq" path="res://Interactions/Controls.gd" id="1_0k3mv"]
+[ext_resource type="Script" uid="uid://d1vlacbkoy7i" path="res://Interactions/input_manager.gd" id="1_igwek"]
 [ext_resource type="Material" uid="uid://fv212aw5bvfc" path="res://Interactions/UI_Raycast_Feedback.tres" id="2_igwek"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_6av75"]
@@ -14,6 +15,7 @@ height = 0.01
 
 [node name="Character" type="Node3D" unique_id=75469284]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0050507, 4.2109375)
+script = ExtResource("1_igwek")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1895229831]
 script = ExtResource("1_0k3mv")
